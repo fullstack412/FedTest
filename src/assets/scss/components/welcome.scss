@@ -1,0 +1,80 @@
+.welcome-content {
+    background-color: $white;
+    padding: 0px 5%;
+    padding-bottom: 220px; 
+    @media screen and ($device-name : $target3) {
+        padding-bottom: 50px; 
+    }
+    text-align: center; 
+    .content {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 600px 600px 600px;
+        justify-content: space-between;
+        align-content: center;
+        grid-column-gap: 3%;
+        grid-row-gap: 3%;
+        @media screen and ($device-name : $target2) {
+            grid-template-columns: auto auto;
+            grid-template-rows: 600px 600px;
+            justify-content: space-between;
+            align-content: center;
+            grid-column-gap: 2%;
+            grid-row-gap: 2%;
+        }
+
+        @media screen and ($device-name : $target3) {
+            display: block;
+            margin: 2%;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 0px auto;
+            text-align: center;
+            font-family: arial;
+            background-color: $tan-grey;
+            @media screen and ($device-name : $target3) {
+               margin-top: 2%;
+            }
+            // height: 80%;
+            .image img{
+                width: 100%;
+                height: 400px;
+                @media screen and ($device-name : $target3) {
+                    height: 200px;
+                 }
+            }
+            .card-body{
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    .circle-icon{
+                        border-radius: 50%;
+                        background-color: $tan-grey;
+                        //  color: $red-accent;
+                        margin-top: -25px;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                .icon img{
+                    margin: 13px auto;
+                    border-radius: 0%;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+        .card:hover{
+            background-color: $black;
+            opacity: 50%;
+            color: $white;
+            .circle-icon{
+                background-color: $black;
+            }
+        }
+          
+    }
+}
+
