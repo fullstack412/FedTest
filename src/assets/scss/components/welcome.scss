@@ -78,3 +78,9 @@
     }
 }
 
+@media screen and ($device-name : $target2) {
+    .card:last-child{
+        display: none;
+    }
+ }
+

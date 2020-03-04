@@ -68,10 +68,12 @@ header {
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
+        height: 900px;
         @media screen and ($device-name : $target1) {
             height: 700px;
         }
         @media screen and ($device-name : $target2) {
+            background-image: url('../images/DynamicPage/www.knobcreek.com-1293609732325191-150x150.jpg');
             display: block;
             height: 680px;
         }
@@ -107,19 +109,24 @@ header {
                 text-align: center;
                 display: flex;
             }
-            img {
+            .adb {
                 margin-top: 50px;
                 display: flex;
                 margin-left: auto;
                 margin-right: auto;
-                width: 50%;
-               
+                width: 45%;
+                // background: url('../../assets/images/photography/KnobCreek.png') no-repeat;
+                @media screen and ($device-name : $target1) {
+                    // background: url('../images/DynamicPage/KnobCreek_Maple6.png') no-repeat;
+                }
                 @media screen and ($device-name : $target2) {
+                    // background: url('../images/DynamicPage/KnobCreek_Maple5-450x707.png') no-repeat;
                     margin-top: 0px;
                     width: 30%;
                 }
                 @media screen and ($device-name : $target3) {
                     margin-top: 0px;
+                    // background: url('../images/DynamicPage/KnobCreek_Maple5-225x354.png') no-repeat;
                     width: 40%;
                 }
             }

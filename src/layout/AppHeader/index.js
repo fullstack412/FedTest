@@ -2,7 +2,8 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
 import logo from '../../assets/images/Logo/www.knobcreek.com-1311011787501770.svg'
-import adbimage from '../../assets/images/photography/KnobCreek.png'
+// import adbimage from '../../assets/images/photography/KnobCreek.png'
+import adbimage from '../../assets/images/DynamicPage/KnobCreek_Maple6.png'
 import card from "../../assets/images/photography/pour-mug.jpg"
 
 import icon from '../../assets/images/iconography/Article.svg'
@@ -45,7 +46,7 @@ export default class AppHeader extends React.Component {
             </div>
           </div>
           <div className="adbimage">
-            <img src={adbimage}></img>
+            <img src={adbimage} className="adb"></img>
           </div>
         </div>
         <div className="header-card">
